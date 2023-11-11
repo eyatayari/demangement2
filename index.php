@@ -44,7 +44,7 @@ require('script/main.php');
                                                 Volume unitaire : <b><?= $element['volume'] ?></b> m³
                                             </h6>
                                             <div class="row">
-                                                <div class="col-8 mx-auto">
+                                                <div class="col-10 mx-auto">
                                                     <div class="input-group">
                                                         <span class="input-group-btn">
                                                             <button type="button"
