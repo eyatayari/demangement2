@@ -12,78 +12,87 @@ require('script/main.php');
 
     <!-- Font Icon -->
     <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.18.0/font/bootstrap-icons.css">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- Main css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
 <div class="main">
-
     <div class="container">
-        <h2 id="volumeTotal">Volume total : 0</h2>
-
-
         <form id="signup-form" class="signup-form">
+            <h2 id="volumeTotal">Volume total : 0 m³</h2>
             <?php foreach (FOURNITURES as $key => $fourniture): ?>
-                <h3><?= $fourniture[0]['categorie'] ?></h3>
-
+                <h3><?= ucwords($fourniture[0]['categorie']) ?></h3>
                 <fieldset>
-
                     <div class="form-holder">
-                        <div class="form-row">
-                            <!--                            <div class="col col-md-3 mb-3">-->
+                        <div class="row">
                             <?PHP foreach ($fourniture as $element): ?>
-
-                                <div class="card mb-3"
-                                     style="width: 15rem; padding: 48px 0 15px; text-align: center;">
-                                    <div class="card-body">
-                                        <h4 class="card-title"><?= $element['nom'] ?></h4>
-                                        <h5 class="card-subtitle mb-2 text-muted">Volume:
-                                            <b><?= $element['volume'] ?></b> m³</h5>
-                                        <div class="input-group">
-                                                <span class="input-group-btn">
-
-                                                    <button type="button" class="btn btn-danger btn-number"
-                                                            data-type="minus" data-field="quant[<?= $element['id'] ?>]">
-                                                        <span class="select-icon"><i class="zmdi zmdi-minus"></i></span>
-              </button>
-                                                 </span>
-                                            <input type="text"
-                                                   class="form-control input-number"
-                                                   id="quant[<?= $element['id'] ?>]"
-                                                   name="quant[<?= $element['id'] ?>]"
-                                                   value="<?= $element['qte'] ?>"
-                                                   data-volume="<?= $element['volume'] ?>"
-                                                   min="0"
-                                                   max="30"/>
-                                            <span class="input-group-btn">
-
-                                                    <button type="button" class="btn btn-success btn-number"
-                                                            data-type="plus" data-field="quant[<?= $element['id'] ?>]">
-                                                                                                            <span class="select-icon"><i class="zmdi zmdi-plus"></i></span>
-
-                                                    </button>
-
-                                                </span>
+                                <div class="col-md-3" >
+                                    <div class="card mb-3" >
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title"><?= $element['nom'] ?></h5>
+                                            <h6 class="card-subtitle mb-2 text-muted">
+                                                Volume unitaire : <b><?= $element['volume'] ?></b> m³
+                                            </h6>
+                                            <div class="row">
+                                                <div class="col-8 mx-auto">
+                                                    <div class="input-group">
+                                                        <span class="input-group-btn">
+                                                            <button type="button"
+                                                                    class="btn btn-danger btn-number"
+                                                                    data-type="minus"
+                                                                    data-field="quant[<?= $element['id'] ?>]">
+                                                                <i class="zmdi zmdi-minus"></i>
+                                                            </button>
+                                                         </span>
+                                                        <input type="number"
+                                                               class="form-control input-number text-center mx-1"
+                                                               id="quant[<?= $element['id'] ?>]"
+                                                               name="quant[<?= $element['id'] ?>]"
+                                                               value="<?= $element['qte'] ?>"
+                                                               data-volume="<?= $element['volume'] ?>"
+                                                               min="0"
+                                                               max="30"/>
+                                                        <span class="input-group-btn">
+                                                                <button type="button"
+                                                                        class="btn btn-success btn-number"
+                                                                        data-type="plus"
+                                                                        data-field="quant[<?= $element['id'] ?>]">
+                                                                    <i class="zmdi zmdi-plus"></i>
+                                                                </button>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             <?PHP endforeach; ?>
-                            <!--                            </div>-->
                         </div>
                     </div>
-
                 </fieldset>
             <?PHP endforeach; ?>
-
         </form>
-
-
     </div>
-
+    <!-- Balise modale pour afficher le volume total -->
+    <div class="modal fade" id="volumeModal" tabindex="-1" aria-labelledby="volumeModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="volumeModalLabel">Volume total</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="volumeMessage"></p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://demenagementfacile.pro/devis/" class="btn btn-primary">Demandez un devis</a>
+                    <a href="https://demenagementfacile.pro/" class="btn btn-secondary">Retour à l'accueil</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!-- JS -->
@@ -92,6 +101,8 @@ require('script/main.php');
 <script src="vendor/jquery-validation/dist/additional-methods.min.js"></script>
 <script src="vendor/jquery-steps/jquery.steps.min.js"></script>
 <script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 <!-- Script ajouté par Marouen -->
 <script src="js/calcule-volume.js" async></script>
 <!-- Script Event Page -->
@@ -102,7 +113,6 @@ require('script/main.php');
         //http://jsfiddle.net/laelitenetwork/puJ6G/
         $('.btn-number').click(function (e) {
             e.preventDefault();
-
             fieldName = $(this).attr('data-field');
             type = $(this).attr('data-type');
             var input = $("input[name='" + fieldName + "']");
@@ -149,29 +159,6 @@ require('script/main.php');
                 alert('Sorry, the maximum value was reached');
                 $(this).val($(this).data('oldValue'));
             }
-            // Extraire l'ID de l'élément du nom de l'input
-            // Extrayez l'ID de l'élément du nom de l'input
-            var id = name.match(/\d+/)[0]; // Cela extrait le premier nombre du nom
-            // Cela extrait le premier nombre du nom
-            // console.log(id)
-            // console.log(valueCurrent)
-            // Envoyez la nouvelle valeur au serveur via une requête AJAX
-            // $.ajax({
-            //     type: 'POST',
-            //     url: 'script/update_quantite.php', // Chemin vers votre script PHP de mise à jour
-            //     data: {
-            //         id: id,
-            //         newValue: valueCurrent
-            //     },
-            //     success: function (response) {
-            //         if (response.success) {
-            //             console.log('Valeur mise à jour avec succès.');
-            //             // Vous pouvez effectuer des actions supplémentaires ici si nécessaire
-            //         } else {
-            //             console.error('Erreur lors de la mise à jour de la valeur.');
-            //         }
-            //     }
-            // });
         });
 
         $(".input-number").keydown(function (e) {
@@ -189,7 +176,6 @@ require('script/main.php');
                 e.preventDefault();
             }
         });
-
     });
 </script>
 </body>

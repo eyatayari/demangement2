@@ -18,7 +18,7 @@ $(document).ready(function () {
         });
 
         // Mettez à jour le texte affichant le volume total
-        document.getElementById('volumeTotal').textContent = 'Volume total : ' + totalVolume.toFixed(2);
+        document.getElementById('volumeTotal').textContent = 'Volume total : ' + totalVolume.toFixed(2) + ' m³';
     }
 
     // Attachez la fonction à l'événement onchange de chaque champ d'entrée

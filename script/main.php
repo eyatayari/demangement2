@@ -6,7 +6,7 @@ CONST FOURNITURES = [
         ["id" => 3, "nom" => "Etagère moyenne", "volume" => 0.5, "qte" => 0],
         ["id" => 4, "nom" => "Etagère petite", "volume" => 0.5, "qte" => 0],
         ["id" => 5, "nom" => "Buffet bas (2 portes)", "volume" => 1.0, "qte" => 0],
-        ["id" => 6, "nom" => "Buffet bas (3 4 portes)", "volume" => 1.6, "qte" => 0],
+        ["id" => 6, "nom" => "Buffet bas (3/4 portes)", "volume" => 1.6, "qte" => 0],
         ["id" => 7, "nom" => "Buffet bas (4/5 portes)", "volume" => 2.0, "qte" => 0],
         ["id" => 8, "nom" => "Buffet 2 corps (bas + haut)", "volume" => 2.5, "qte" => 0],
         ["id" => 9, "nom" => "Chaise", "volume" => 0.25, "qte" => 0],
@@ -46,23 +46,7 @@ CONST FOURNITURES = [
         ["id" => 43, "nom" => "Carton petit", "volume" => 0.05, "qte" => 0],
         ["id" => 44, "nom" => "Cartons penderies", "volume" => 0.50, "qte" => 0]
     ],
-    "Salle de Bain" => [
-        ["id" => 45, "nom" => "Bac à linge", "volume" => 0.27, "qte" => 0, "categorie" => "Salle de bain"],
-        ["id" => 46, "nom" => "Etendoir à linge (tancarville)", "volume" => 0.06, "qte" => 0],
-        ["id" => 47, "nom" => "Miroir / Tableau", "volume" => 0.18, "qte" => 0],
-        ["id" => 48, "nom" => "Lampe / Lampadaire / Lustre", "volume" => 0.25, "qte" => 0],
-        ["id" => 49, "nom" => "Lave Linge / Sèche linge", "volume" => 0.50, "qte" => 0],
-        ["id" => 50, "nom" => "Meuble colonne", "volume" => 1.00, "qte" => 0],
-        ["id" => 51, "nom" => "Meuble bas (2 portes)", "volume" => 0.05, "qte" => 0],
-        ["id" => 52, "nom" => "Meuble haut (2 portes)", "volume" => 0.50, "qte" => 0],
-        ["id" => 53, "nom" => "Meuble pharmacie", "volume" => 0.05, "qte" => 0],
-        ["id" => 54, "nom" => "Poubelle", "volume" => 0.13, "qte" => 0],
-        ["id" => 55, "nom" => "Carton grand", "volume" => 0.10, "qte" => 0],
-        ["id" => 56, "nom" => "Carton moyen", "volume" => 0.07, "qte" => 0],
-        ["id" => 57, "nom" => "Carton petit", "volume" => 0.05, "qte" => 0],
-        ["id" => 58, "nom" => "Cartons penderies", "volume" => 0.50, "qte" => 0]
-    ],
-    "salonSalleAManger" => [
+    "Salon - Salle à manger" => [
         ["id" => 59, "nom" => "Pouf/Repose pieds (grand)", "volume" => 0.40, "qte" => 0, "categorie" => "Salon/Salle à manger"],
         ["id" => 60, "nom" => "Pouf/Repose pieds (petit)", "volume" => 0.10, "qte" => 0],
         ["id" => 61, "nom" => "Pouf Poire", "volume" => 0.80, "qte" => 0],
@@ -113,57 +97,7 @@ CONST FOURNITURES = [
         ["id" => 106, "nom" => "Carton petit", "volume" => 0.05, "qte" => 0],
         ["id" => 107, "nom" => "Cartons penderies", "volume" => 0.50, "qte" => 0]
     ],
-    "divers" => [
-        ["id" => 108, "nom" => "Aquarium (vide) 200l", "volume" => 0.50, "qte" => 0, "categorie" => "Divers"],
-        ["id" => 109, "nom" => "Aquarium 75 l", "volume" => 0.30, "qte" => 0],
-        ["id" => 110, "nom" => "Aquarium 30 l", "volume" => 0.30, "qte" => 0],
-        ["id" => 111, "nom" => "Valise grande", "volume" => 0.16, "qte" => 0],
-        ["id" => 112, "nom" => "Valise moyenne", "volume" => 0.13, "qte" => 0],
-        ["id" => 113, "nom" => "Valise petite", "volume" => 0.06, "qte" => 0],
-        ["id" => 114, "nom" => "Baby foot", "volume" => 2.00, "qte" => 0],
-        ["id" => 115, "nom" => "Panier pour chien", "volume" => 0.08, "qte" => 0],
-        ["id" => 116, "nom" => "Plante / arbuste (H > 2m)", "volume" => 1.00, "qte" => 0],
-        ["id" => 117, "nom" => "Plante grande taille (H < 2m)", "volume" => 0.83, "qte" => 0],
-        ["id" => 118, "nom" => "Plante moyenne taille (H < 1m)", "volume" => 0.17, "qte" => 0],
-        ["id" => 119, "nom" => "Plante petite taille (H < 50cm)", "volume" => 0.02, "qte" => 0],
-        ["id" => 120, "nom" => "Jardinière vide", "volume" => 0.10, "qte" => 0]
-    ],
-    "materiel" => [
-        ["id" => 121, "nom" => "Aspirateur", "volume" => 0.10, "qte" => 0, "categorie" => "Materiel"],
-        ["id" => 122, "nom" => "Climatiseur/ventilateur", "volume" => 0.50, "qte" => 0],
-        ["id" => 123, "nom" => "mini chaine hifi", "volume" => 0.05, "qte" => 0],
-        ["id" => 124, "nom" => "stéréo", "volume" => 0.15, "qte" => 0],
-        ["id" => 125, "nom" => "Guitare", "volume" => 0.15, "qte" => 0],
-        ["id" => 126, "nom" => "Imprimante", "volume" => 0.25, "qte" => 0],
-        ["id" => 127, "nom" => "Machine à coudre +console", "volume" => 0.50, "qte" => 0],
-        ["id" => 128, "nom" => "Machine à coudre portable", "volume" => 0.10, "qte" => 0],
-        ["id" => 129, "nom" => "Matériel de sport", "volume" => 0.25, "qte" => 0],
-        ["id" => 130, "nom" => "ecran ordinateur", "volume" => 0.25, "qte" => 0],
-        ["id" => 131, "nom" => "Ordinateur (écran + uc + clavier)", "volume" => 0.25, "qte" => 0],
-        ["id" => 132, "nom" => "Poussette / Siège auto", "volume" => 0.95, "qte" => 0],
-        ["id" => 133, "nom" => "piano numerique", "volume" => 0.50, "qte" => 0],
-        ["id" => 134, "nom" => "Synthétiseur", "volume" => 0.50, "qte" => 0],
-        ["id" => 135, "nom" => "Table à langer", "volume" => 0.70, "qte" => 0],
-        ["id" => 136, "nom" => "Table à repasser (+ fer)", "volume" => 0.10, "qte" => 0],
-        ["id" => 137, "nom" => "Tour CD (grand modèle)", "volume" => 0.10, "qte" => 0],
-        ["id" => 138, "nom" => "Tour CD (modèle bas)", "volume" => 0.04, "qte" => 0],
-        ["id" => 139, "nom" => "Vélo d'appartement", "volume" => 1.50, "qte" => 0]
-    ],
-    "poidsLourds" => [
-        ["id" => 140, "nom" => "Billard", "volume" => 3.00, "qte" => 0, "categorie" => "poids Lourds"],
-        ["id" => 141, "nom" => "Coffre fort grand", "volume" => 0.50, "qte" => 0],
-        ["id" => 142, "nom" => "Coffre fort petit", "volume" => 0.20, "qte" => 0],
-        ["id" => 143, "nom" => "Piano droit", "volume" => 1.55, "qte" => 0],
-        ["id" => 144, "nom" => "Piano à queue", "volume" => 3.70, "qte" => 0]
-    ],
-    "caveGrenier" => [
-        ["id" => 145, "nom" => "Caddie de golf", "volume" => 0.25, "qte" => 0, "categorie" => "Cave/Grenier"],
-        ["id" => 146, "nom" => "Cave à vin", "volume" => 1.00, "qte" => 0],
-        ["id" => 147, "nom" => "Carton grand", "volume" => 0.10, "qte" => 0],
-        ["id" => 148, "nom" => "Carton moyen", "volume" => 0.07, "qte" => 0],
-        ["id" => 149, "nom" => "Carton petit", "volume" => 0.05, "qte" => 0]
-    ],
-    "chambre" => [
+    "Chambres" => [
         ["id" => 150, "nom" => "Armoire 2 portes", "volume" => 2.00, "qte" => 0, "categorie" => "Chambre"],
         ["id" => 151, "nom" => "Armoire 2 portes coulissantes", "volume" => 2.50, "qte" => 0],
         ["id" => 152, "nom" => "Armoire 3 portes", "volume" => 2.50, "qte" => 0],
@@ -247,7 +181,23 @@ CONST FOURNITURES = [
         ["id" => 230, "nom" => "Carton petit", "volume" => 0.05, "qte" => 0],
         ["id" => 231, "nom" => "Cartons penderies", "volume" => 0.50, "qte" => 0]
     ],
-    "garage" => [
+    "Salle de Bain" => [
+        ["id" => 45, "nom" => "Bac à linge", "volume" => 0.27, "qte" => 0, "categorie" => "Salle de bain"],
+        ["id" => 46, "nom" => "Etendoir à linge (tancarville)", "volume" => 0.06, "qte" => 0],
+        ["id" => 47, "nom" => "Miroir / Tableau", "volume" => 0.18, "qte" => 0],
+        ["id" => 48, "nom" => "Lampe / Lampadaire / Lustre", "volume" => 0.25, "qte" => 0],
+        ["id" => 49, "nom" => "Lave Linge / Sèche linge", "volume" => 0.50, "qte" => 0],
+        ["id" => 50, "nom" => "Meuble colonne", "volume" => 1.00, "qte" => 0],
+        ["id" => 51, "nom" => "Meuble bas (2 portes)", "volume" => 0.05, "qte" => 0],
+        ["id" => 52, "nom" => "Meuble haut (2 portes)", "volume" => 0.50, "qte" => 0],
+        ["id" => 53, "nom" => "Meuble pharmacie", "volume" => 0.05, "qte" => 0],
+        ["id" => 54, "nom" => "Poubelle", "volume" => 0.13, "qte" => 0],
+        ["id" => 55, "nom" => "Carton grand", "volume" => 0.10, "qte" => 0],
+        ["id" => 56, "nom" => "Carton moyen", "volume" => 0.07, "qte" => 0],
+        ["id" => 57, "nom" => "Carton petit", "volume" => 0.05, "qte" => 0],
+        ["id" => 58, "nom" => "Cartons penderies", "volume" => 0.50, "qte" => 0]
+    ],
+    "Garage" => [
         ["id" => 232, "nom" => "Banc de musculation grd", "volume" => 2.50, "qte" => 0, "categorie" => "Garage"],
         ["id" => 233, "nom" => "Banc de musculation petit", "volume" => 0.50, "qte" => 0],
         ["id" => 234, "nom" => "Banc de musculation moyen", "volume" => 1.75, "qte" => 0],
@@ -278,7 +228,57 @@ CONST FOURNITURES = [
         ["id" => 259, "nom" => "Carton moyen", "volume" => 0.07, "qte" => 0],
         ["id" => 260, "nom" => "Carton petit", "volume" => 0.05, "qte" => 0]
     ],
-    "exterieur" => [
+    "Divers" => [
+        ["id" => 108, "nom" => "Aquarium (vide) 200l", "volume" => 0.50, "qte" => 0, "categorie" => "Divers"],
+        ["id" => 109, "nom" => "Aquarium 75 l", "volume" => 0.30, "qte" => 0],
+        ["id" => 110, "nom" => "Aquarium 30 l", "volume" => 0.30, "qte" => 0],
+        ["id" => 111, "nom" => "Valise grande", "volume" => 0.16, "qte" => 0],
+        ["id" => 112, "nom" => "Valise moyenne", "volume" => 0.13, "qte" => 0],
+        ["id" => 113, "nom" => "Valise petite", "volume" => 0.06, "qte" => 0],
+        ["id" => 114, "nom" => "Baby foot", "volume" => 2.00, "qte" => 0],
+        ["id" => 115, "nom" => "Panier pour chien", "volume" => 0.08, "qte" => 0],
+        ["id" => 116, "nom" => "Plante / arbuste (H > 2m)", "volume" => 1.00, "qte" => 0],
+        ["id" => 117, "nom" => "Plante grande taille (H < 2m)", "volume" => 0.83, "qte" => 0],
+        ["id" => 118, "nom" => "Plante moyenne taille (H < 1m)", "volume" => 0.17, "qte" => 0],
+        ["id" => 119, "nom" => "Plante petite taille (H < 50cm)", "volume" => 0.02, "qte" => 0],
+        ["id" => 120, "nom" => "Jardinière vide", "volume" => 0.10, "qte" => 0]
+    ],
+    "Materiel" => [
+        ["id" => 121, "nom" => "Aspirateur", "volume" => 0.10, "qte" => 0, "categorie" => "Materiel"],
+        ["id" => 122, "nom" => "Climatiseur/ventilateur", "volume" => 0.50, "qte" => 0],
+        ["id" => 123, "nom" => "mini chaine hifi", "volume" => 0.05, "qte" => 0],
+        ["id" => 124, "nom" => "stéréo", "volume" => 0.15, "qte" => 0],
+        ["id" => 125, "nom" => "Guitare", "volume" => 0.15, "qte" => 0],
+        ["id" => 126, "nom" => "Imprimante", "volume" => 0.25, "qte" => 0],
+        ["id" => 127, "nom" => "Machine à coudre +console", "volume" => 0.50, "qte" => 0],
+        ["id" => 128, "nom" => "Machine à coudre portable", "volume" => 0.10, "qte" => 0],
+        ["id" => 129, "nom" => "Matériel de sport", "volume" => 0.25, "qte" => 0],
+        ["id" => 130, "nom" => "ecran ordinateur", "volume" => 0.25, "qte" => 0],
+        ["id" => 131, "nom" => "Ordinateur (écran + uc + clavier)", "volume" => 0.25, "qte" => 0],
+        ["id" => 132, "nom" => "Poussette / Siège auto", "volume" => 0.95, "qte" => 0],
+        ["id" => 133, "nom" => "piano numerique", "volume" => 0.50, "qte" => 0],
+        ["id" => 134, "nom" => "Synthétiseur", "volume" => 0.50, "qte" => 0],
+        ["id" => 135, "nom" => "Table à langer", "volume" => 0.70, "qte" => 0],
+        ["id" => 136, "nom" => "Table à repasser (+ fer)", "volume" => 0.10, "qte" => 0],
+        ["id" => 137, "nom" => "Tour CD (grand modèle)", "volume" => 0.10, "qte" => 0],
+        ["id" => 138, "nom" => "Tour CD (modèle bas)", "volume" => 0.04, "qte" => 0],
+        ["id" => 139, "nom" => "Vélo d'appartement", "volume" => 1.50, "qte" => 0]
+    ],
+    "Poids Lourds" => [
+        ["id" => 140, "nom" => "Billard", "volume" => 3.00, "qte" => 0, "categorie" => "poids Lourds"],
+        ["id" => 141, "nom" => "Coffre fort grand", "volume" => 0.50, "qte" => 0],
+        ["id" => 142, "nom" => "Coffre fort petit", "volume" => 0.20, "qte" => 0],
+        ["id" => 143, "nom" => "Piano droit", "volume" => 1.55, "qte" => 0],
+        ["id" => 144, "nom" => "Piano à queue", "volume" => 3.70, "qte" => 0]
+    ],
+    "Cave Grenier" => [
+        ["id" => 145, "nom" => "Caddie de golf", "volume" => 0.25, "qte" => 0, "categorie" => "Cave/Grenier"],
+        ["id" => 146, "nom" => "Cave à vin", "volume" => 1.00, "qte" => 0],
+        ["id" => 147, "nom" => "Carton grand", "volume" => 0.10, "qte" => 0],
+        ["id" => 148, "nom" => "Carton moyen", "volume" => 0.07, "qte" => 0],
+        ["id" => 149, "nom" => "Carton petit", "volume" => 0.05, "qte" => 0]
+    ],
+    "Exterieur" => [
         ["id" => 261, "nom" => "Balancelle 3 places démontée", "volume" => 0.25, "qte" => 0, "categorie" => "Extérieur"],
         ["id" => 262, "nom" => "Balancelle pour bébé", "volume" => 0.50, "qte" => 0],
         ["id" => 263, "nom" => "Balançoire / démontée", "volume" => 1.00, "qte" => 0],

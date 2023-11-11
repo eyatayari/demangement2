@@ -72,7 +72,17 @@
         },
         onFinished: function (event, currentIndex)
         {
-            alert('Sumited');
+            // Extraire le volume total du bloc h2
+            var totalVolumeText = $("#volumeTotal").text();
+
+            // Extraire la valeur numérique du texte
+            var totalVolume = parseFloat(totalVolumeText.match(/\d+(\.\d+)?/)[0]);
+
+            // Mettre à jour le contenu de la modale avec le volume total
+            $("#volumeMessage").text("Le volume total de votre simulateur est : " + totalVolume + " m³");
+
+            // Afficher la modale
+            $("#volumeModal").modal("show");
         },
         onStepChanged: function (event, currentIndex, priorIndex)
         {
