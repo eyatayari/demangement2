@@ -22,7 +22,7 @@ require('script/main.php');
     <div class="container">
         <div class="col-12 p-4">
             <h1 class="bd-title">Calcul volume déménagement : Estimation</h1>
-            <span>Components and options for laying out your Bootstrap project, including wrapping containers, a powerful grid system, a flexible media object, and responsive utility classes.</span>
+            <span>Facilitez votre déménagement grâce à notre calculateur de volume. L'estimation du volume nous permet de sélectionner les cartons appropriés ainsi que le ou les camions nécessaires pour votre déménagement, en saisissant la liste de vos biens personnels. Veuillez noter qu'il s'agit d'un simulateur basé sur des normes moyennes et fourni à titre indicatif. Assurez-vous de disposer des dimensions exactes de vos objets.</span>
         </div>
         <form id="signup-form" class="signup-form">
             <h2 id="volumeTotal">Volume total : 0 m³</h2>
