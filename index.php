@@ -8,7 +8,8 @@ require('script/main.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="colorlib.com">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign Up Form</title>
+    <title>Calcul volume déménagement : Estimation</title>
+    <link rel="icon" href="https://demenagementfacile.pro/wp-content/uploads/2023/09/cropped-favicon-32x32.png" sizes="32x32">
 
     <!-- Font Icon -->
     <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
@@ -22,7 +23,10 @@ require('script/main.php');
     <div class="container">
         <div class="col-12 p-4">
             <h1 class="bd-title">Calcul volume déménagement : Estimation</h1>
-            <span>Facilitez votre déménagement grâce à notre calculateur de volume. L'estimation du volume nous permet de sélectionner les cartons appropriés ainsi que le ou les camions nécessaires pour votre déménagement, en saisissant la liste de vos biens personnels. Veuillez noter qu'il s'agit d'un simulateur basé sur des normes moyennes et fourni à titre indicatif. Assurez-vous de disposer des dimensions exactes de vos objets.</span>
+            <p class="text-justify">Facilitez votre déménagement grâce à notre calculateur de volume.
+                L'estimation du volume nous permet de sélectionner les cartons appropriés ainsi que le ou les camions nécessaires pour votre déménagement, en saisissant la liste de vos biens personnels.
+                Veuillez noter qu'il s'agit d'un simulateur basé sur des normes moyennes et fourni à titre indicatif.
+                Assurez-vous de disposer des dimensions exactes de vos objets.</p>
         </div>
         <form id="signup-form" class="signup-form">
             <h2 id="volumeTotal">Volume total : 0 m³</h2>
