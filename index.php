@@ -20,6 +20,10 @@ require('script/main.php');
 <body>
 <div class="main">
     <div class="container">
+        <div class="col-12 p-4">
+            <h1 class="bd-title">Calcul volume déménagement : Estimation</h1>
+            <span>Components and options for laying out your Bootstrap project, including wrapping containers, a powerful grid system, a flexible media object, and responsive utility classes.</span>
+        </div>
         <form id="signup-form" class="signup-form">
             <h2 id="volumeTotal">Volume total : 0 m³</h2>
             <?php foreach (FOURNITURES as $key => $fourniture): ?>
@@ -87,8 +91,8 @@ require('script/main.php');
                     <p id="volumeMessage"></p>
                 </div>
                 <div class="modal-footer">
-                    <a href="https://demenagementfacile.pro/devis/" class="btn btn-primary">Demandez un devis</a>
                     <a href="https://demenagementfacile.pro/" class="btn btn-secondary">Retour à l'accueil</a>
+                    <a href="https://demenagementfacile.pro/devis/" class="btn btn-primary">Demandez un devis</a>
                 </div>
             </div>
         </div>

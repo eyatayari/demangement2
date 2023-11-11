@@ -220,13 +220,13 @@ body {
     line-height: 1.6;
     color: #222;
     font-weight: 400;
-    font-family: 'Poppins';
+    font-family: 'Poppins', serif;
     margin: 0px;
-    background: #8be7ac;
+    background: #0d1126;
 }
 
 .main {
-    padding: 160px 0;
+    padding: 60px 0;
 }
 
 .container {
@@ -267,7 +267,7 @@ input, select {
 }
 
 input:focus, select:focus {
-    border: 1px solid #1ed760;
+    border: 1px solid #cf1428;
 }
 
 input::-webkit-input-placeholder, select::-webkit-input-placeholder {
@@ -409,7 +409,7 @@ fieldset.current {
 }
 
 .form-radio input:checked + label figure {
-    border: 2px solid #1ed760;
+    border: 2px solid #cf1428;
 }
 
 .form-radio input:checked + label figure img {
@@ -418,7 +418,7 @@ fieldset.current {
 }
 
 .form-radio input:checked + label span {
-    color: #1ed760;
+    color: #cf1428;
 }
 
 .form-radio input:focus + label {
@@ -426,8 +426,8 @@ fieldset.current {
 }
 
 .form-radio input:hover {
-    background-color: #1ed760;
-    border-color: #1ed760;
+    background-color: #cf1428;
+    border-color: #cf1428;
 }
 
 .form-flex {
@@ -470,7 +470,7 @@ fieldset.current {
 }
 
 .steps ul li:hover a {
-    background: #1ed760;
+    background: #cf1428;
 }
 
 .steps ul li:hover a h3 {
@@ -478,7 +478,7 @@ fieldset.current {
 }
 
 .steps ul .current a {
-    background: #1ed760;
+    background: #cf1428;
 }
 
 .steps ul .current a h3 {
@@ -517,7 +517,7 @@ fieldset.current {
     width: 140px;
     height: 50px;
     color: #fff;
-    background: #1ed760;
+    background: #cf1428;
     align-items: center;
     -moz-align-items: center;
     -webkit-align-items: center;
@@ -611,13 +611,13 @@ fieldset.current {
 }
 
 input.error {
-    border: 1px solid #f63726;
+    border: 1px solid #8d1216;
     margin-bottom: 20px;
 }
 
 label.error {
     font-size: 12px;
-    color: #f63726;
+    color: #8d1216;
     position: absolute;
     bottom: 17px;
     left: 0;
